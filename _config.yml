@@ -1,7 +1,8 @@
 # Site settings
 title: Esistgut
 email: g.graziosi@gmail.com
-description: "Hi, I am Giacomo Graziosi, this is my space, welcome."
+description: "Giacomo Graziosi's log about programming, embedded hardware, digital art and other random tech stuff."
+keywords: [programming, development, web development, django, python, ruby, php]
 baseurl: ""
 url: "http://esistgut.github.io"
 author: Giacomo Graziosi
