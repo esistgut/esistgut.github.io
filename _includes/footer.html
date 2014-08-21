@@ -1,0 +1,22 @@
+<!-- Footer -->
+<footer>
+    <div class="row">
+        <div class="col-lg-12 text-center center-block">
+            <br />
+                {% if site.facebook_username %}
+                    <a href="https://www.facebook.com/{{ site.facebook_username }}"><i id="social" class="fa fa-facebook-square fa-3x"></i></a>
+                {% endif %}
+                {% if site.twitter_username %}
+	                <a href="https://twitter.com/{{ site.twitter_username }}"><i id="social" class="fa fa-twitter-square fa-3x"></i></a>
+	            {% endif %}
+	            {% if site.googleplus_username %}
+	                <a href="https://plus.google.com/+{{ site.googleplus_username }}"><i id="social" class="fa fa-google-plus-square fa-3x"></i></a>
+                {% endif %}
+                {% if site.email %}
+    	            <a href="mailto:{{ site.email }}"><i id="social" class="fa fa-envelope-square fa-3x"></i></a>
+	            {% endif %}
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+</footer>

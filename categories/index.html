@@ -1,0 +1,18 @@
+---
+layout: page
+title: Categories
+---
+<div>
+	{% for cat in site.categories %}
+		<section id="{{ cat.first }}">
+		    <h4>{{ cat.first }}</h4>
+		    <ul>
+			    {% for post in cat.last %}
+				    <li>
+					    <a href="{{ post.url | remove:'.html' }}">{{ post.title }} - ({{ post.date | date_to_string }})</a>
+				    </li>
+			    {% endfor %}
+		    </ul>
+		</section>
+	{% endfor %}
+</div>

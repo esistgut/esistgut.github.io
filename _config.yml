@@ -1,0 +1,24 @@
+# Site settings
+title: Esistgut
+email: g.graziosi@gmail.com
+description: "Hi, I am Giacomo Graziosi, this is my space, welcome."
+baseurl: ""
+url: "http://esistgut.github.io"
+author: Giacomo Graziosi
+twitter_username: GiacomoGraziosi
+facebook_username: GiacomoGraziosi
+googleplus_username: GiacomoGraziosi
+github_username:  esistgut
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+#highlighter: pygments
+excerpt_separator: "<!--more-->"
+paginate: 5
+
+gems:
+ - jemoji
+ - jekyll-sitemap
+ - jekyll-redirect-from
+

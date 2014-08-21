@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<!-- Blog Entries Column -->
+<div class="col-md-8">
+
+    {% for post in paginator.posts %}
+
+        <!-- Blog Post -->
+        <h2>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <p class="lead">
+            by <a href="/contact/">{{ post.author }}</a> &nbsp;&nbsp;&nbsp;
+                {% for category in post.categories %}
+                    <a href="/categories/#{{ category }}"><span class="label label-primary">{{ category }}</span></a>
+                    &nbsp;
+                {% endfor %}
+        </p>
+        <p><span class="glyphicon glyphicon-time"></span> {{ post.date | date: "%b %-d, %Y" }}</p>
+        <hr>
+        {{ post.excerpt }}
+        <a class="btn btn-primary" href="{{ post.url | prepend: site.baseurl }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+        <hr>
+    
+    {% endfor %}
+
+
+    <!-- Pager -->
+    <ul class="pager">
+        {% if paginator.next_page %}
+            <li class="previous">
+                {% if paginator.next_page == 1 %}
+                    <a href="/">&larr; Older</a>
+                {% else %}
+                    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Older</a>
+                {% endif %}                
+            </li>
+        {% endif %}
+        {% if paginator.previous_page %}
+            <li class="next">
+                <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Newer &rarr;</a>
+            </li>
+        {% endif %}
+    </ul>
+
+</div>
