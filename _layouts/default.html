@@ -44,7 +44,7 @@
                             {% for category in site.categories %}
                                 {% capture thecycle %}{% cycle 'odds:': 'odd', 'even' %}{% endcapture %}
                                 {% if thecycle == 'odd' %}
-                                    <li><a href="/categories/#{{ category }}">{{ category | first }}</a></li>
+                                    <li><a href="/categories/#{{ category | first }}">{{ category | first }}</a></li>
                                 {% endif %}
                             {% endfor %}
                             </ul>
@@ -55,7 +55,7 @@
                             {% for category in site.categories %}
                                 {% capture thecycle %}{% cycle 'evens': 'odd', 'even' %}{% endcapture %}
                                 {% if thecycle == 'even' %}
-                                    <li><a href="/categories/#{{ category }}">{{ category | first }}</a></li>
+                                    <li><a href="/categories/#{{ category | first }}">{{ category | first }}</a></li>
                                 {% endif %}
                             {% endfor %}
                             </ul>
