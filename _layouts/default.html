@@ -24,9 +24,9 @@
                     <form action="http://www.google.com/search" id="searchform" method="get">
                         <div class="input-group">
                             <input type="text" class="form-control" id="search_input" name="q">
-                            <input type="hidden" name="sitesearch" value="{{ site.url }}">
+                            <input type="hidden" name="sitesearch" value="{{ site.url | remove:'http://' }}">
                             <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">
+                                <button class="btn btn-default" type="submit">
                                     <span class="glyphicon glyphicon-search"></span>
                                 </button>
                             </span>                        
