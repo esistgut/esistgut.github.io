@@ -4,8 +4,6 @@ body,html {
 /* 	background: url('<%= asset_path "noise.png" %>'); */
 }
 
-
-
 body {
     padding-top: 60px;
     font-weight: 400;
@@ -24,13 +22,6 @@ footer {
 section {
     padding-top: 60px;
     margin-top: -60px;
-}
-
-/* somewhat wrong: http://stackoverflow.com/a/17933207 "using this to make all your images responsive by default turns your images to block level elements. Block level elements are not allowed in paragraphs (<p>)" */
-img {
-    display: block;
-    height: auto;
-    max-width: 100%;
 }
 
 .navbar-nav > li > a,navbar,navbar-brand,.navbar-brand,h1,h2,h3,h4,h5,h6 {

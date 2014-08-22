@@ -7,7 +7,7 @@ comments: true
 categories: [linux]
 tags: [c, cctv, cerberus, linux, motion, open source, programming, python, ruby, security, surveillance, video surveillance, vigilante]
 ---
-![Cerberus illustration](/assets/cerberus.png)
+<img src="/assets/cerberus.png" class="img-responsive" alt="Cerberus illustration">
 
 ---
 What is this cool drooling puppy doing on my blog? His name is Cerberus, he came from Greek mithology and he is nothing less than the guardian of the gate to Hades, also known as Hell.
