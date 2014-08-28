@@ -13,6 +13,7 @@
         <meta property="og:title" content="{{ page.title }}"/>
         <meta property="og:type" content="article"/>
         <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | replace:'  ','' }}"/>
+        <meta property="article:author" content="https://www.facebook.com/{{ site.facebook_username }}" />
     {% else %}
         <meta property="og:title" content="{{ site.title }} | {{ site.author }}"/>
         <meta property="og:type" content="website"/>
